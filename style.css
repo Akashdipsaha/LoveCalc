@@ -1,0 +1,96 @@
+/* Set the background color and font family */
+body {
+  background-color: #f6e9e9;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the container for the love calculator */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the love calculator heading */
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #b20944;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 1px #ddd;
+}
+
+/* Style the input fields */
+.input-section input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid #e98c8c;
+}
+
+/* Style the calculate button */
+.input-section button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #e40a18;
+  color: #fff;
+  font-size: 18px;
+  border: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+}
+
+/* Add hover effect to the calculate button */
+.input-section button:hover {
+  background-color: #b20944;
+}
+
+/* Style the love score result */
+#result {
+  text-align: center;
+  font-size: 24px;
+  color: #f42222;
+  margin-top: 30px;
+}
+
+/* Add hover effect to the love score result */
+#result:hover {
+  color: #f0aaaa;
+}
+
+/* Add celebration popout animation to the love score result */
+#result:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f93232;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 1;
+  animation: celebration 2s ease-in-out;
+}
+
+@keyframes celebration {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
